@@ -9,6 +9,11 @@ public class TrainService {
         return trainList.stream().filter(train->validTrain(train,source,destination)).collect(Collectors.toList());
     }
 
+    public void addTrain(Train newTrain) {
+
+    }
+
+
     public Boolean validTrain(Train train,String source,String  destination){
         List<String> stationOrder=train.getStations();
         int sourceIndex=stationOrder.indexOf(source.toLowerCase());
