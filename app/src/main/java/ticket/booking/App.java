@@ -80,8 +80,8 @@ public class App {
                    System.out.println("Select a train by typing 1,2,3...");
                    trainSelectedForBooking = trains.get(scanner.nextInt());
                    break;
-//               case 5:
-//                   System.out.println("Select a seat out of these seats");
+               case 5:
+                   System.out.println("Select a seat out of these seats");
 //
 //                   List<List<Integer>> seats=userBookingService.fetchSeats(trainSelectedForBooking);
 //                   List<List<Integer>> seatsSelected=
