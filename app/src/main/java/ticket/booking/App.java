@@ -82,10 +82,28 @@ public class App {
                    break;
                case 5:
                    System.out.println("Select a seat out of these seats");
-//
-//                   List<List<Integer>> seats=userBookingService.fetchSeats(trainSelectedForBooking);
-//                   List<List<Integer>> seatsSelected=
-
+                   List<List<Integer>> seats=userBookingService.fetchSeats(trainSelectedForBooking);
+                   for(List<Integer> row: seats){
+                       for(Integer val:row){
+                           System.out.println(val+" ");
+                       }
+                       System.out.println();
+                   }
+                   System.out.println("Select the seats by typing the row and column");
+                   System.out.println("Enter the row");
+                   int row = scanner.nextInt();
+                   System.out.println("Enter the column");
+                   int col = scanner.nextInt();
+                   System.out.println("Booking your seat....");
+                   Boolean booked = userBookingService.bookTrainSeat(trainSelectedForBooking, row, col);
+                   if(booked.equals(Boolean.TRUE)){
+                       System.out.println("Booked! Enjoy your journey");
+                   }else{
+                       System.out.println("Can't book this seat");
+                   }
+                   break;
+               default:
+                   break;
 
            }
 

@@ -91,5 +91,8 @@ public class UserBookingService {
             return new ArrayList<>();
         }
     }
+    public List<List<Integer>> fetchSeats(Train trainSelectedForBooking){
+       return trainSelectedForBooking.getSeats();
+    }
 
 }
