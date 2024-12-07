@@ -23,6 +23,10 @@ public class Train {
         return stations;
     }
 
+    public Map<String, String> getStationTimes(){
+        return stationTimes;
+    }
+
     public List<List<Integer>> getSeats(){
         return seats;
     }
