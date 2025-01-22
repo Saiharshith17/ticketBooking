@@ -47,57 +47,41 @@ saiharshith17-ticketbooking/
         └── gradle-wrapper.properties
 ```
 
-Technologies Used
-Programming Language: Java
-Build Tool: Gradle
-Database: SQL (persistent storage), JSON (local storage)
-Testing Framework: JUnit
-Version Control: Git
-IDE: IntelliJ IDEA / Eclipse
-Prerequisites
-Java 17 or higher installed
-Gradle installed
-SQL database setup (MySQL/PostgreSQL)
-Git for version control
-Installation
-Clone the repository:
-bash
-Copy code
+##Technologies Used
+-Programming Language: Java
+-Build Tool: Gradle
+-Database: SQL (persistent storage), JSON (local storage)
+-Testing Framework: JUnit
+-Version Control: Git
+-IDE: IntelliJ IDEA / Eclipse
+##Prerequisites
+-Java 17 or higher installed
+-Gradle installed
+-SQL database setup (MySQL/PostgreSQL)
+-Git for version control
+##Installation
+-Clone the repository:
+-bash
+```
 git clone https://github.com/your-username/saiharshith17-ticketbooking.git
 cd saiharshith17-ticketbooking
-Build the project:
-bash
-Copy code
+```
+##Build the project:
+-bash
+```
 ./gradlew build
+```
 Configure the SQL database by updating the database connection details in the App.java file or a properties file.
-Running the Application
+##Running the Application
 Run the main application:
 
 bash
-Copy code
+```
 ./gradlew run
+```
 Testing
 Run the unit tests:
 
-bash
-Copy code
-./gradlew test
-Contributing
-Fork the repository.
-Create a new feature branch:
-bash
-Copy code
-git checkout -b feature-name
-Commit your changes:
-bash
-Copy code
-git commit -m "Add your message here"
-Push the branch to your forked repository:
-bash
-Copy code
-git push origin feature-name
-Create a pull request.
-License
 This project is licensed under the MIT License.
 
 Author
